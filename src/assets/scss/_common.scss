@@ -164,7 +164,7 @@ body {
           margin: 0;
           a {
             &:not(:last-child){
-              border-bottom: 1px solid #321E4159;
+              border-bottom: 1px solid $menuBorderColor;
             }
           }
         }
@@ -175,8 +175,8 @@ body {
           &::before {
             content: '';
             position: absolute;
-            height: 20px;
-            width: 20px;
+            height: 1.25rem;
+            width: 1.25rem;
             top: 13px;
             left: 25px;
             background-repeat: no-repeat;
@@ -238,7 +238,7 @@ body {
         .candidates-col {
           span {
             padding: .375rem .875rem;
-            background-color: #2E476533;
+            background-color: $indexBackgroundColor;
             border-radius: .625rem;
             margin-right: .875rem;
           }

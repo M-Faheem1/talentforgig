@@ -8,10 +8,10 @@ function SidebarFooterList() {
   return (
     <ul className='sidebar-footer-list-items'>
       <li>
-        <Link to={ROUTES.SETTINGS}> <SvgSettingsSvg /> <span> Settings </span> </Link>
+        <Link to={ROUTES.SETTINGS}> <SvgSettingsSvg /><span>Settings</span></Link>
       </li>
       <li>
-        <Link to={ROUTES.LOGOUT}> <SvgLogoutSvg /> <span> Logout </span> </Link>
+        <Link to={ROUTES.LOGOUT}> <SvgLogoutSvg /><span>Logout</span></Link>
       </li>
     </ul>
   )

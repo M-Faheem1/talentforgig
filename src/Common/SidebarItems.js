@@ -37,9 +37,9 @@ function SidebarItems() {
 
   return (
     <ul className='sidebar-items-list'>
-      {sidebarItems.map(sidebarItems => (
-        <li key={sidebarItems.label}>
-          <Link className='list-items-label' to={sidebarItems.ROUTE}> {sidebarItems.icon} {sidebarItems.label} </Link>
+      {sidebarItems.map(sidebarItem => (
+        <li key={sidebarItem.label}>
+          <Link className='list-items-label' to={sidebarItem.ROUTE}> {sidebarItem.icon} {sidebarItem.label} </Link>
         </li>
       ))}
     </ul>

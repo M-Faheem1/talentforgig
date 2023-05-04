@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import SvgSettingsSvg from '../assets/svgs/components/settings-svg'
 import SvgLogoutSvg from '../assets/svgs/components/logout-svg'
 
@@ -6,12 +7,10 @@ function SidebarFooterList() {
   return (
     <ul className='sidebar-footer-list-items'>
       <li>
-        <a className='footer-list-items-icon'><SvgSettingsSvg /></a>
-        <a href='#'>Settings</a>
+        <Link to='/settings'> <SvgSettingsSvg /> <span> Settings </span> </Link>
       </li>
       <li>
-        <a className='footer-list-items-icon'><SvgLogoutSvg /></a>
-        <a href='#'>Logout</a>
+        <Link to='/logout'> <SvgLogoutSvg /> <span> Logout </span> </Link>
       </li>
     </ul>
   )

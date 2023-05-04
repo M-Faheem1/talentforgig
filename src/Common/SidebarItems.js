@@ -1,35 +1,58 @@
-import React from 'react'
-import SvgOpenAssessmentsSvg from '../assets/svgs/components/open-assessments-svg'
-import SvgReportsSvg from '../assets/svgs/components/reports-svg'
-import SvgPeopleSvg from '../assets/svgs/components/people-svg'
-import SvgRateSvg from '../assets/svgs/components/rate-svg'
-import SvgMyAssessmentsSvg from '../assets/svgs/components/my-assessments-svg'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import SvgOpenAssessmentsSvg from '../assets/svgs/components/open-assessments-svg';
+import SvgReportsSvg from '../assets/svgs/components/reports-svg';
+import SvgPeopleSvg from '../assets/svgs/components/people-svg';
+import SvgRateSvg from '../assets/svgs/components/rate-svg';
+import SvgMyAssessmentsSvg from '../assets/svgs/components/my-assessments-svg';
 
 function SidebarItems() {
+  const items = [
+    {
+      icon: <SvgMyAssessmentsSvg />,
+      label: 'My Assessments',
+      link: '/'
+    },
+    {
+      icon: <SvgOpenAssessmentsSvg />,
+      label: 'Open Assessments',
+      link: '/open-assessments'
+    },
+    {
+      icon: <SvgReportsSvg />,
+      label: 'Reports',
+      link: '/reports'
+    },
+    {
+      icon: <SvgPeopleSvg />,
+      label: 'People',
+      link: '/people'
+    },
+    {
+      icon: <SvgRateSvg />,
+      label: 'Rate',
+      link: '/rate'
+    }
+  ];
+
   return (
-      <ul className='sidebar-items-list'>
-        <li> 
-          <span><a className='sidebar-list-items-icon'><SvgMyAssessmentsSvg /></a></span>
-          <span><a className='list-items' href='#'>My Assessments</a></span>
+    <ul className='sidebar-items-list'>
+      {items.map(item => (
+        <div className='list-item'>
+        <li key={item.label}>
+          <span>
+            <Link className='list-items-icon' to={item.link}> {item.icon} </Link>
+          </span>
         </li>
-        <li> 
-          <span><a className='sidebar-list-items-icon'><SvgOpenAssessmentsSvg /></a></span>
-          <span><a className='list-items' href='#'>Open Assessments</a></span>
+        <li key={item.label}>
+          <span>
+            <Link className='list-items-label' to={item.link}> {item.label} </Link>
+          </span>
         </li>
-        <li> 
-          <span><a className='sidebar-list-items-icon'><SvgReportsSvg /></a></span>
-          <span><a className='list-items' href='#'>Reports</a></span>
-        </li>
-        <li> 
-          <span><a className='sidebar-list-items-icon'><SvgPeopleSvg /></a></span>
-          <span><a className='list-items' href='#'>People</a></span>
-        </li>
-        <li> 
-          <span><a className='sidebar-list-items-icon'><SvgRateSvg /></a></span>
-          <span><a className='list-items' href='#'>Rate</a></span>
-        </li>
-      </ul>
+        </div>
+      ))}
+    </ul>
   )
 }
 
-export default SidebarItems
+export default SidebarItems;

@@ -32,16 +32,24 @@ body {
       list-style-type: none;
       padding: 0;
       margin-bottom: 0;
-      li {
-        font-size: 1.125rem;
-        font-weight: 500;
-        margin-top: 2.625rem;
-        a {
-          text-decoration: none;
-          color: $bgWhite;
-        }
-        .list-items {
-          margin-left: 1.25rem;
+      .list-item {
+        display: flex;
+        li {
+          font-size: 1.125rem;
+          font-weight: 500;
+          margin-top: 2.625rem;
+          a {
+            text-decoration: none;
+            color: $bgWhite;
+            display: flex;
+          }
+          .list-items-icon {
+            display: flex;
+            width: 26px;
+          }
+          .list-items-label {
+            margin-left: 1rem;
+          }
         }
       }
     }
@@ -63,6 +71,9 @@ body {
         a {
           text-decoration: none;
           color: $bgWhite;
+          span {
+            margin-left: 1rem;
+          }
         }
       }
     }
@@ -200,25 +211,25 @@ body {
       width: 5%;
     }
     .table-head {
-      .table-head-row {
+      .table-row {
         display: flex;
         background-color: $bgWhite;
         border-radius: 1rem;
         padding: 27px 2.5rem 24px;
-        .table-head-col {
+        .table-cell {
           font-size: 1rem;
           font-weight: 400;
         }
       }
     }
     .table-body {
-      .table-body-row {
+      .table-row {
         display: flex;
         background-color: $bgWhite;
         padding: 27px 2.5rem 24px;
         border-radius: 1rem;
         margin-top: 1.0625rem;
-        .table-body-col {
+        .table-cell {
           display: flex;
           align-items: center;
         } 

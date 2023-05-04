@@ -2,15 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import SvgSettingsSvg from '../assets/svgs/components/settings-svg'
 import SvgLogoutSvg from '../assets/svgs/components/logout-svg'
+import { ROUTES } from '../routes'
 
 function SidebarFooterList() {
   return (
     <ul className='sidebar-footer-list-items'>
       <li>
-        <Link to='/settings'> <SvgSettingsSvg /> <span> Settings </span> </Link>
+        <Link to={ROUTES.SETTINGS}> <SvgSettingsSvg /> <span> Settings </span> </Link>
       </li>
       <li>
-        <Link to='/logout'> <SvgLogoutSvg /> <span> Logout </span> </Link>
+        <Link to={ROUTES.LOGOUT}> <SvgLogoutSvg /> <span> Logout </span> </Link>
       </li>
     </ul>
   )

@@ -15,7 +15,9 @@ function Activity() {
           <button className='btn export-btn btn-primary'> <SvgExportSvg /> <span> Export </span> </button>
           <DropdownMenu />
           <Form>
-            <FormControl type="text" placeholder="Search" />
+            <div className='search-input-field'>
+              <FormControl type="text" placeholder="Search" />
+            </div>
           </Form>
         </div>
       </div>
@@ -27,8 +29,8 @@ function Activity() {
             <div className='table-cell w-10'>Date</div>
             <div className='table-cell w-10'>Duration</div>
             <div className='table-cell w-10'>Status</div>
-            <div className='table-cell w-20'>Results</div>
-            <div className='table-cell w-10 reviews-col'>Review</div>
+            <div className='table-cell w-20 results-header-cell'>Results</div>
+            <div className='table-cell w-10'>Review</div>
           </div>
           <div className='table-body'>
           <div className='table-row'>

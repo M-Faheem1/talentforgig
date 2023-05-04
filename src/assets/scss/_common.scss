@@ -32,23 +32,17 @@ body {
       list-style-type: none;
       padding: 0;
       margin-bottom: 0;
-      .list-item {
-        display: flex;
-        li {
-          font-size: 1.125rem;
-          font-weight: 500;
-          margin-top: 2.625rem;
-          a {
-            text-decoration: none;
-            color: $bgWhite;
-            display: flex;
-          }
-          .list-items-icon {
-            display: flex;
-            width: 1.625rem;
-          }
-          .list-items-label {
-            margin-left: 1rem;
+      li {
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-top: 2.625rem;
+        a {
+          text-decoration: none;
+          color: $bgWhite;
+          display: flex;
+          svg {
+            margin-right: 1.25rem;
+            width: 1.9375rem;
           }
         }
       }
@@ -140,6 +134,7 @@ body {
         background-color: $bgDanger;
         border-radius: 20px/50%;
         border: transparent;
+        height: 2.4375rem;
         padding: .4375rem 2rem;
         span {
           margin-left: .625rem;
@@ -148,7 +143,6 @@ body {
       .dropdown {
         margin: 0 .9375rem;
         .dropdown-toggle {
-          height: 3.125rem;
           background-color: transparent;
           color: $btnBorderColor;
           border: 1px solid $btnBorderColor;
@@ -176,19 +170,24 @@ body {
         }
       }
       form {
-        input {
+        .search-input-field {
           position: relative;
-          text-align: center;
-          background: transparent;
-          height: 100%;
-          width: 9.5625rem;
-          border-radius: 20px/50%;
           &::before {
             content: '';
             position: absolute;
-            height: .75rem;
-            width: .75rem;
-            background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9369 6.661C12.9369 7.7806 12.6049 8.87505 11.9829 9.80598C11.3609 10.7369 10.4768 11.4625 9.44247 11.891C8.40812 12.3195 7.26993 12.4316 6.17183 12.2133C5.07373 11.9949 4.06504 11.4559 3.27329 10.6643C2.48155 9.87268 1.94231 8.86408 1.72377 7.76602C1.50522 6.66796 1.61719 5.52975 2.0455 4.49532C2.47382 3.46089 3.19925 2.5767 4.13006 1.95454C5.06088 1.33238 6.15527 1.0002 7.27487 1C8.77626 1 10.2162 1.59643 11.2778 2.65807C12.3394 3.71971 12.9359 5.15961 12.9359 6.661H12.9369Z' stroke='%2397A3B5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            height: 20px;
+            width: 20px;
+            top: 13px;
+            left: 25px;
+            background-repeat: no-repeat;
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9369 6.661C12.9369 7.7806 12.6049 8.87505 11.9829 9.80598C11.3609 10.7369 10.4768 11.4625 9.44247 11.891C8.40812 12.3195 7.26993 12.4316 6.17183 12.2133C5.07373 11.9949 4.06504 11.4559 3.27329 10.6643C2.48155 9.87268 1.94231 8.86408 1.72377 7.76602C1.50522 6.66796 1.61719 5.52975 2.0455 4.49532C2.47382 3.46089 3.19925 2.5767 4.13006 1.95454C5.06088 1.33238 6.15527 1.0002 7.27487 1C8.77626 1 10.2162 1.59643 11.2778 2.65807C12.3394 3.71971 12.9359 5.15961 12.9359 6.661H12.9369Z' stroke='%2397A3B5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.3519 13.7382L11.2739 10.6602' stroke='%2397A3B5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+          }
+          input {
+            text-align: center;
+            background: transparent;
+            height: 100%;
+            width: 9.5625rem;
+            border-radius: 20px/50%;
           }
         }
       }
@@ -219,6 +218,9 @@ body {
         .table-cell {
           font-size: 1rem;
           font-weight: 400;
+        }
+        .results-header-cell {
+          padding-left: 2.5rem;
         }
       }
     }
@@ -266,6 +268,9 @@ body {
             top: 40%;
             left: -20px;
           }
+        }
+        .reviews-col {
+          padding-left: 1.25rem;
         }
       }
     }

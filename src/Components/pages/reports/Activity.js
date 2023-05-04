@@ -14,7 +14,7 @@ function Activity() {
         <div className='heading-filters'>
           <button className='btn export-btn btn-primary'> <SvgExportSvg /> <span> Export </span> </button>
           <DropdownMenu />
-          <Form inline>
+          <Form>
             <FormControl type="text" placeholder="Search" />
           </Form>
         </div>
@@ -37,7 +37,7 @@ function Activity() {
             <div className='table-cell w-10'>24/09/21</div>
             <div className='table-cell w-10'>00:22:35</div>
             <div className='table-cell w-10 status-col'>Completed</div>
-            <div className='table-cell w-20 results-col'>7/10 <span> <SvgStarSvg /> (3) </span> <SvgLikeSvg /> (5) </div>
+            <div className='table-cell w-20 results-col'>7/10 <span> <SvgStarSvg /> (3) </span> <SvgLikeSvg className='like-svg'/> (5) </div>
             <div className='table-cell w-10 reviews-col'><SvgReviewSvg /></div>
           </div> 
           </div>

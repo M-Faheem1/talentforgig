@@ -18,7 +18,7 @@ function Reports() {
             <div className='report-card'>
               <ReportCard
                 icon={<SvgPublishedAssessmentsSvg />}
-                heading="01"
+                heading="02"
                 subHeading="Published Assessments"/>
                 <ReportCard 
                 icon={< SvgTotalCandidatesSvg />}

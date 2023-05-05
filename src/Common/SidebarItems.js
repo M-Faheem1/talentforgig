@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import SvgOpenAssessmentsSvg from '../assets/svgs/components/open-assessments-svg';
 import SvgReportsSvg from '../assets/svgs/components/reports-svg';
 import SvgPeopleSvg from '../assets/svgs/components/people-svg';
@@ -39,7 +39,9 @@ function SidebarItems() {
     <ul className='sidebar-items-list'>
       {sidebarItems.map(sidebarItem => (
         <li key={sidebarItem.label}>
-          <Link className='list-items-label' to={sidebarItem.ROUTE}> {sidebarItem.icon} {sidebarItem.label} </Link>
+          <NavLink className='list-items-label' activeClassName='active' exact to={sidebarItem.ROUTE}>
+            {sidebarItem.icon} {sidebarItem.label}
+          </NavLink>
         </li>
       ))}
     </ul>

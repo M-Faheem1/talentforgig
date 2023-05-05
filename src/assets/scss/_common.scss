@@ -26,8 +26,7 @@ body {
     padding: 2.5rem 2.25rem 0;
   }
   .sidebar-items {
-    margin-top: 9.1875rem;
-    margin-left: 3.3125rem;
+    margin: 9.1875rem 1.125rem 0;
     .sidebar-items-list {
       list-style-type: none;
       padding: 0;
@@ -36,10 +35,15 @@ body {
         font-size: 1.125rem;
         font-weight: 500;
         margin-top: 2.625rem;
+        .active {
+          background-color: #E6335B;
+        }
         a {
           text-decoration: none;
           color: $bgWhite;
           display: flex;
+          padding: 15px 0px 18px 32px;
+          border-radius: 13px;
           svg {
             margin-right: 1.25rem;
             width: 1.9375rem;
@@ -132,7 +136,7 @@ body {
       .export-btn {
         color: $bgWhite;
         background-color: $bgDanger;
-        border-radius: 20px/50%;
+        border-radius: 20px;
         border: transparent;
         height: 2.4375rem;
         padding: .4375rem 2rem;
@@ -146,25 +150,40 @@ body {
           background-color: transparent;
           color: $btnBorderColor;
           border: 1px solid $btnBorderColor;
-          padding: .4375rem .9375rem .4375rem 2.625rem ;
-          border-radius: 20px/50%;
+          padding: .4375rem 2.5rem .4375rem 2.625rem ;
+          border-radius: 20px;
           position: relative;
           &::before {
+            position: absolute;
             content: '';
             top: 30%;
-            position: absolute;
             height: 1.0625rem;
             width: 1.0625rem;
             left: 15px;
             background-image: url("data:image/svg+xml,%3Csvg width='19' height='16' viewBox='0 0 19 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.0931 1.274H14.9601V0.6C14.9601 0.44087 14.8968 0.288257 14.7843 0.175735C14.6718 0.0632136 14.5192 0 14.3601 0C14.2009 0 14.0483 0.0632136 13.9358 0.175735C13.8233 0.288257 13.7601 0.44087 13.7601 0.6V1.273H5.43606V0.6C5.43606 0.44087 5.37285 0.288257 5.26032 0.175735C5.1478 0.0632136 4.99519 0 4.83606 0C4.67693 0 4.52432 0.0632136 4.4118 0.175735C4.29927 0.288257 4.23606 0.44087 4.23606 0.6V1.273H2.85406C2.58967 1.27221 2.32772 1.32354 2.08318 1.42405C1.83864 1.52456 1.61631 1.67228 1.42889 1.85876C1.24148 2.04525 1.09266 2.26685 0.990934 2.51088C0.889212 2.75492 0.836584 3.01661 0.83606 3.281V13.981C0.83606 14.5163 1.04864 15.0297 1.42706 15.4083C1.80548 15.7869 2.31876 15.9997 2.85406 16H16.0931C16.628 15.9992 17.1408 15.7863 17.5191 15.4081C17.8974 15.0298 18.1103 14.517 18.1111 13.982V3.282C18.1108 3.01754 18.0583 2.75573 17.9567 2.51157C17.8551 2.26741 17.7063 2.04571 17.5188 1.85917C17.3313 1.67263 17.1089 1.52492 16.8642 1.42451C16.6196 1.32409 16.3575 1.27295 16.0931 1.274V1.274ZM16.9071 13.982C16.9071 14.1979 16.8213 14.4049 16.6686 14.5576C16.516 14.7102 16.3089 14.796 16.0931 14.796H2.85406C2.63817 14.796 2.43113 14.7102 2.27847 14.5576C2.12582 14.4049 2.04006 14.1979 2.04006 13.982V6.336H16.9071V13.982ZM2.03606 5.133V3.281C2.03671 3.17494 2.05831 3.07007 2.09962 2.97239C2.14094 2.87471 2.20114 2.78615 2.27678 2.71181C2.35242 2.63747 2.44201 2.57881 2.54039 2.5392C2.63877 2.49959 2.74401 2.47981 2.85006 2.481H4.23606V2.931C4.23606 3.09013 4.29927 3.24274 4.4118 3.35526C4.52432 3.46778 4.67693 3.531 4.83606 3.531C4.99519 3.531 5.1478 3.46778 5.26032 3.35526C5.37285 3.24274 5.43606 3.09013 5.43606 2.931V2.481H13.7561V2.931C13.7561 3.09013 13.8193 3.24274 13.9318 3.35526C14.0443 3.46778 14.1969 3.531 14.3561 3.531C14.5152 3.531 14.6678 3.46778 14.7803 3.35526C14.8928 3.24274 14.9561 3.09013 14.9561 2.931V2.481H16.0891C16.1951 2.47981 16.3003 2.49959 16.3987 2.5392C16.4971 2.57881 16.5867 2.63747 16.6623 2.71181C16.738 2.78615 16.7982 2.87471 16.8395 2.97239C16.8808 3.07007 16.9024 3.17494 16.9031 3.281V5.132L2.03606 5.133Z' fill='%2397A3B5'/%3E%3C/svg%3E");
           }
+          &::after {
+            position: absolute;
+            content: '';
+            top: 17px;
+            height: 1.0625rem;
+            width: 1.0625rem;
+            right: 15px;
+            background-image: url("data:image/svg+xml,%3Csvg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.7331 0.237088C12.0721 0.937088 11.4081 1.63709 10.7471 2.32609C9.68839 3.43809 8.63106 4.55009 7.57506 5.66209C7.33306 5.92109 7.08705 6.17509 6.84505 6.43309H8.00605C7.34505 5.73309 6.68105 5.03308 6.02005 4.34408C4.96139 3.23208 3.90406 2.12008 2.84806 1.00808C2.60606 0.749084 2.36005 0.495088 2.11805 0.237088C1.96352 0.0858994 1.7556 0.00176065 1.53941 0.00294196C1.32323 0.00412327 1.11624 0.0905368 0.963368 0.243405C0.8105 0.396274 0.724094 0.603254 0.722913 0.81944C0.721731 1.03563 0.80587 1.24355 0.957059 1.39808C1.61806 2.09808 2.28206 2.79809 2.94306 3.48709C4.00173 4.59909 5.05906 5.71109 6.11506 6.82309C6.35706 7.08209 6.60305 7.33608 6.84505 7.59408C7.00016 7.74586 7.20854 7.83085 7.42556 7.83085C7.64257 7.83085 7.85095 7.74586 8.00605 7.59408C8.66705 6.89408 9.33105 6.19409 9.99205 5.50509C11.0507 4.39309 12.1081 3.28109 13.1641 2.16909C13.4061 1.91009 13.6521 1.65608 13.8941 1.39808C14.0452 1.24355 14.1294 1.03563 14.1282 0.81944C14.127 0.603254 14.0406 0.396274 13.8877 0.243405C13.7349 0.0905368 13.5279 0.00412327 13.3117 0.00294196C13.0955 0.00176065 12.8876 0.0858994 12.7331 0.237088Z' fill='%2397A3B5'/%3E%3C/svg%3E");
+            border: none;
+            background-repeat: no-repeat;
+          }
         }
         .dropdown-menu {
           background-color:$bgPrimary;
-          margin: 0;
+          margin-top: 5px;
+          width: 11.5rem;
+          border-radius: 10px;
+          border: 1px solid $btnBorderColor;
           a {
+            color: $textPrimaryColor;
             &:not(:last-child){
-              border-bottom: 1px solid $menuBorderColor;
+              border-bottom: 1px solid $btnBorderColor;
             }
           }
         }
@@ -183,11 +202,16 @@ body {
             background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9369 6.661C12.9369 7.7806 12.6049 8.87505 11.9829 9.80598C11.3609 10.7369 10.4768 11.4625 9.44247 11.891C8.40812 12.3195 7.26993 12.4316 6.17183 12.2133C5.07373 11.9949 4.06504 11.4559 3.27329 10.6643C2.48155 9.87268 1.94231 8.86408 1.72377 7.76602C1.50522 6.66796 1.61719 5.52975 2.0455 4.49532C2.47382 3.46089 3.19925 2.5767 4.13006 1.95454C5.06088 1.33238 6.15527 1.0002 7.27487 1C8.77626 1 10.2162 1.59643 11.2778 2.65807C12.3394 3.71971 12.9359 5.15961 12.9359 6.661H12.9369Z' stroke='%2397A3B5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.3519 13.7382L11.2739 10.6602' stroke='%2397A3B5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
           }
           input {
-            text-align: center;
             background: transparent;
             height: 100%;
             width: 9.5625rem;
-            border-radius: 20px/50%;
+            border-radius: 20px;
+            padding-left: 3.3125rem;
+            box-shadow: none;
+            border: 1px solid $btnBorderColor;
+            &:focus {
+              border-color: $btnBorderColor;
+            }
           }
         }
       }
@@ -197,17 +221,25 @@ body {
     width: 100%;
     margin-top: 1.25rem;
     color: $textPrimaryColor;
+    .w-25 {
+      width: 25%;
+    }
     .w-20 {
       width: 20%;
+    }
+    .w-15 {
+      width: 15%;
     }
     .w-10 {
       width: 10%;
     }
-    .w-25 {
-      width: 25%;
-    }
     .w-5 {
       width: 5%;
+    }
+    .table-cell {
+      font-size: 1rem;
+      font-weight: 400;
+      padding-right: .625rem;
     }
     .table-head {
       .table-row {
@@ -215,9 +247,11 @@ body {
         background-color: $bgWhite;
         border-radius: 1rem;
         padding: 1.6875rem 2.5rem 1.5rem;
-        .table-cell {
-          font-size: 1rem;
-          font-weight: 400;
+        .status-cell, 
+        .date-cell {
+          span {
+            margin-right: .625rem;
+          }
         }
         .results-header-cell {
           padding-left: 2.5rem;
@@ -234,6 +268,7 @@ body {
         .table-cell {
           display: flex;
           align-items: center;
+          font-weight: 500;
         } 
         .candidates-col {
           span {
@@ -254,9 +289,12 @@ body {
             margin-right: .25rem;
           }
         }
-        .status-col {
+        .status-cell {
           position: relative;
           color: $statusCompleted;
+          span {
+            margin-right: .625rem;
+          }
           &::before {
             margin-left: .5rem;
             position: absolute;

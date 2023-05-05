@@ -179,7 +179,7 @@ body {
 }
 .activity .activity-header .heading-filters .dropdown .dropdown-menu {
   background-color: #F5F6FA;
-  margin-top: 5px;
+  margin-top: 0.3125rem;
   width: 11.5rem;
   border-radius: 10px;
   border: 1px solid #97A3B5;

@@ -1,8 +1,8 @@
 import React from 'react'
-import SvgSortSvg from '../../assets/svgs/components/sort-svg'
-import SvgStarSvg from '../../assets/svgs/components/star-svg'
-import SvgLikeSvg from '../../assets/svgs/components/like-svg'
-import SvgReviewSvg from '../../assets/svgs/components/review-svg'
+import SvgSortSvg from 'assets/svgs/components/sort-svg'
+import SvgStarSvg from 'assets/svgs/components/star-svg'
+import SvgLikeSvg from 'assets/svgs/components/like-svg'
+import SvgReviewSvg from 'assets/svgs/components/review-svg'
 
 function ActivityTable() {
   return (

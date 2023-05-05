@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import SvgOpenAssessmentsSvg from '../assets/svgs/components/open-assessments-svg';
-import SvgReportsSvg from '../assets/svgs/components/reports-svg';
-import SvgPeopleSvg from '../assets/svgs/components/people-svg';
-import SvgRateSvg from '../assets/svgs/components/rate-svg';
-import SvgMyAssessmentsSvg from '../assets/svgs/components/my-assessments-svg';
+import SvgOpenAssessmentsSvg from 'assets/svgs/components/open-assessments-svg';
+import SvgReportsSvg from 'assets/svgs/components/reports-svg';
+import SvgPeopleSvg from 'assets/svgs/components/people-svg';
+import SvgRateSvg from 'assets/svgs/components/rate-svg';
+import SvgMyAssessmentsSvg from 'assets/svgs/components/my-assessments-svg';
 
 function SidebarItems() {
   const sidebarItems = [

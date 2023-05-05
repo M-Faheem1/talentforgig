@@ -1,7 +1,7 @@
 import React from 'react'
-import SidebarItems from './SidebarItems'
-import SidebarFooterList from './SidebarFooterList'
-import SvgTalentForGigSvg from '../assets/svgs/components/talent-for-gig-svg'
+import SidebarItems from 'Common/SidebarItems'
+import SidebarFooterList from 'Common/SidebarFooterList'
+import SvgTalentForGigSvg from 'assets/svgs/components/talent-for-gig-svg'
 
 function Sidebar() {
   return (

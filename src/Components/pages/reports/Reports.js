@@ -1,10 +1,10 @@
 import React from 'react'
-import ReportCard from './ReportCard'
-import SvgPublishedAssessmentsSvg from '../../../assets/svgs/components/published-assessments-svg'
-import SvgTotalCandidatesSvg from '../../../assets/svgs/components/total-candidates-svg'
-import SvgAssessmentSubmittedSvg from '../../../assets/svgs/components/assessment-submitted-svg'
-import SvgTimeSpentSvg from '../../../assets/svgs/components/time-spent-svg'
-import Activity from './Activity'
+import ReportCard from 'Components/pages/reports/ReportCard'
+import SvgPublishedAssessmentsSvg from 'assets/svgs/components/published-assessments-svg'
+import SvgTotalCandidatesSvg from 'assets/svgs/components/total-candidates-svg'
+import SvgAssessmentSubmittedSvg from 'assets/svgs/components/assessment-submitted-svg'
+import SvgTimeSpentSvg from 'assets/svgs/components/time-spent-svg'
+import Activity from 'Components/pages/reports/Activity'
 
 function Reports() {
   return (

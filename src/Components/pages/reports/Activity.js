@@ -1,8 +1,8 @@
 import React from 'react'
-import SvgExportSvg from '../../../assets/svgs/components/export-svg'
 import {Form, FormControl } from "react-bootstrap";
-import DropdownMenu from '../../DropdownMenu';
-import ActivityTable from '../ActivityTable';
+import SvgExportSvg from 'assets/svgs/components/export-svg'
+import DropdownMenu from 'Common/DropdownMenu';
+import ActivityTable from 'Components/pages/reports/ActivityTable';
 
 function Activity() {
   return (

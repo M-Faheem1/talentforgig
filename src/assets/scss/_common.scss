@@ -36,13 +36,13 @@ body {
         font-weight: 500;
         margin-top: 2.625rem;
         .active {
-          background-color: #E6335B;
+          background-color: $bgDanger;
         }
         a {
           text-decoration: none;
           color: $bgWhite;
           display: flex;
-          padding: 15px 0px 18px 32px;
+          padding: .9375rem 0px 1.125rem 2rem;
           border-radius: 13px;
           svg {
             margin-right: 1.25rem;

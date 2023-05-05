@@ -47,7 +47,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   display: flex;
-  padding: 15px 0px 18px 32px;
+  padding: 0.9375rem 0px 1.125rem 2rem;
   border-radius: 13px;
 }
 .side-bar .sidebar-items .sidebar-items-list li a svg {

@@ -11,6 +11,7 @@ export { default as RateSvg } from "./rate-svg";
 export { default as ReportsSvg } from "./reports-svg";
 export { default as ReviewSvg } from "./review-svg";
 export { default as SettingsSvg } from "./settings-svg";
+export { default as SortSvg } from "./sort-svg";
 export { default as StarSvg } from "./star-svg";
 export { default as TalentForGigSvg } from "./talent-for-gig-svg";
 export { default as TimeSpentSvg } from "./time-spent-svg";

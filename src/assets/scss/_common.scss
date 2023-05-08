@@ -247,6 +247,7 @@ body {
         background-color: $bgWhite;
         border-radius: 1rem;
         padding: 1.6875rem 2.5rem 1.5rem;
+        margin-bottom: 1.25rem;
         .status-cell, 
         .date-cell {
           span {
@@ -259,12 +260,17 @@ body {
       }
     }
     .table-body {
+      overflow-y: scroll;
+      scroll-behavior: auto;
+      height: 26.25rem;
       .table-row {
         display: flex;
         background-color: $bgWhite;
         padding: 1.6875rem 2.5rem 1.5rem;
         border-radius: 1rem;
-        margin-top: 1.0625rem;
+        &:not(:last-of-type) {
+          margin-bottom: 1.25rem;
+        }
         .table-cell {
           display: flex;
           align-items: center;

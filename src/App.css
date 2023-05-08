@@ -245,6 +245,7 @@ body {
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 1.6875rem 2.5rem 1.5rem;
+  margin-bottom: 1.25rem;
 }
 .activity .activity-table .table-head .table-row .status-cell span,
 .activity .activity-table .table-head .table-row .date-cell span {
@@ -253,12 +254,19 @@ body {
 .activity .activity-table .table-head .table-row .results-header-cell {
   padding-left: 2.5rem;
 }
+.activity .activity-table .table-body {
+  overflow-y: scroll;
+  scroll-behavior: auto;
+  height: 26.25rem;
+}
 .activity .activity-table .table-body .table-row {
   display: flex;
   background-color: #ffffff;
   padding: 1.6875rem 2.5rem 1.5rem;
   border-radius: 1rem;
-  margin-top: 1.0625rem;
+}
+.activity .activity-table .table-body .table-row:not(:last-of-type) {
+  margin-bottom: 1.25rem;
 }
 .activity .activity-table .table-body .table-row .table-cell {
   display: flex;

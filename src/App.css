@@ -255,9 +255,22 @@ body {
   padding-left: 2.5rem;
 }
 .activity .activity-table .table-body {
-  overflow-y: scroll;
+  overflow-y: auto;
   scroll-behavior: auto;
-  height: 26.25rem;
+  max-height: 26rem;
+}
+.activity .activity-table .table-body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.activity .activity-table .table-body::-webkit-scrollbar-track {
+  background: #F5F6FA;
+}
+.activity .activity-table .table-body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.activity .activity-table .table-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 .activity .activity-table .table-body .table-row {
   display: flex;

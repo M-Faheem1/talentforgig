@@ -260,9 +260,22 @@ body {
       }
     }
     .table-body {
-      overflow-y: scroll;
+      overflow-y: auto;
       scroll-behavior: auto;
-      height: 26.25rem;
+      max-height: 26rem;
+      &::-webkit-scrollbar {
+        width: .5rem;
+      }
+      &::-webkit-scrollbar-track {
+        background: $bgPrimary;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: $scrollbarThumbColor;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: $scrollbarThumbHover;
+      }
       .table-row {
         display: flex;
         background-color: $bgWhite;
